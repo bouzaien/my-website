@@ -18,27 +18,29 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
-  date_end = ""
+  title = "Software Developer"
+  company = "Imeon Energy"
+  company_url = "https://imeon-energy.com/"
+  location = "Brest, France"
+  date_start = "2019-02-04"
+  date_end = "2019-03-01"
   description = """
   Responsibilities include:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  * Software Development: Realization of specific modules to monitor solar panels usage.
+  * Web Development: Designing, implementing and managing a graphical interface (HTML5, JQuery, SQLite).
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  title = "French Summer School Counselor"
+  company = "IMT Atlantique"
+  company_url = "https://www.imt-atlantique.fr/en"
+  location = "Brest, France"
+  date_start = "2019-07-23"
+  date_end = "2019-08-23"
+  description = """
+  Managing the daily activities of 57 students with 14 different nationalities during their one-month French intensive course camp at IMT Atlantique in Brest. That includes organizing cultural activities and trips, sports activities and occasional thematic parties.
+  """
+
 
 +++
