@@ -18,6 +18,11 @@
   url = "#projects"
   weight = 30
 
+[[main]]
+  name = "Courses"
+  url = "courses/"
+  weight = 40
+
 # [[main]]
 #   name = "Publications"
 #   url = "#featured"
@@ -34,3 +39,18 @@
 #    name = "CV"
 #    url = "files/cv.pdf"
 #    weight = 70
+
+[[courses]]
+  name = "Overview"
+  weight = 10
+  url = "/courses/"
+
+[[courses]]
+  name = "EURECOM"
+  weight = 20
+  identifier = "eurecom"
+
+[[courses]]
+  name = "IMT Atlantique"
+  weight = 30
+  identifier = "imt"
