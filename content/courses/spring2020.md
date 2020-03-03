@@ -1,0 +1,27 @@
++++
+title = "Spring 2020"
+
+toc = true
+type = "docs"
+date = "2019-05-05T00:00:00+01:00"
+weight = 10
+
+[menu.courses]
+    parent = "eurecom"
+    weight = 1
++++
+
+### AML
+Algorithmic Machine Learning
+### ASI
+Advanced Statistical Inference
+### DeepLearning
+Deep Learning
+### FormalMet
+FormalMethods-Formal specification and verification of systems
+### MALCOM
+Machine Learning for Communication systems
+### Speech
+Speech and audio processing
+### WebSem
+An Introduction to Semantic Web technologies
