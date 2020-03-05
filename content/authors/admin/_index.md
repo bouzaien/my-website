@@ -45,15 +45,16 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/mokhles-bouzaien/
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/Mo5_Bzn
 - icon: github
   icon_pack: fab
   link: https://github.com/mo5bzn
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/Mo5_Bzn
 - icon: gitlab
   icon_pack: fab
   link: https://gitlab.eurecom.fr/bouzaien
+
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
