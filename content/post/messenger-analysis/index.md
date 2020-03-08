@@ -1,5 +1,5 @@
 ---
-title: 'More than 8 years of messages analysis.'
+title: 'More than 8 years of messages analysis'
 # subtitle: Learn how to blog in Academic using Jupyter notebooks
 summary: I downloaded my data from Facebook in a .json format. I used Python with Jupyter Notebook to play with data. The json and pandas libraries are very useful to read and display data in a stylized way. I added some columns to the data such as date (since the available time was a millisecond timestamp) and total characters for each row (each row represents a sent message). Finally, I exported the data as an .xls file and opened it with Tableau to make the graphs.
 
@@ -18,7 +18,7 @@ draft: false
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption:
+  caption: "Total messages by Day"
   focal_point: Smart
 
 # Projects (optional).
@@ -145,7 +145,7 @@ df.head()
       <th>0</th>
       <td>Her</td>
       <td>1562350465800</td>
-      <td>Yestghalou fi woujoudi kalouli mekech dima len...</td>
+      <td>Hidden Message</td>
       <td>2019-07-05</td>
       <td>2019</td>
       <td>7</td>
@@ -158,7 +158,7 @@ df.head()
       <th>1</th>
       <td>Her</td>
       <td>1562350430104</td>
-      <td>Haw yhebou yaamlou doura ahna -_-</td>
+      <td>Hidden Message</td>
       <td>2019-07-05</td>
       <td>2019</td>
       <td>7</td>
@@ -171,7 +171,7 @@ df.head()
       <th>2</th>
       <td>Her</td>
       <td>1562350413998</td>
-      <td>Beehy taw njib flash eni w kol mara jeya xD</td>
+      <td>Hidden Message</td>
       <td>2019-07-05</td>
       <td>2019</td>
       <td>7</td>
@@ -184,7 +184,7 @@ df.head()
       <th>3</th>
       <td>Me</td>
       <td>1562350377019</td>
-      <td>haw sabbitou</td>
+      <td>Hidden Message</td>
       <td>2019-07-05</td>
       <td>2019</td>
       <td>7</td>
@@ -197,7 +197,7 @@ df.head()
       <th>4</th>
       <td>Me</td>
       <td>1562350371595</td>
-      <td>beehy xD</td>
+      <td>Hidden Message</td>
       <td>2019-07-05</td>
       <td>2019</td>
       <td>7</td>
