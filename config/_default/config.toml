@@ -71,6 +71,6 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   author = "authors"
 
 [sitemap]
-  changefreq = "daily"
+  changefreq = "hourly"
   filename = "sitemap.xml"
   priority = 0.5
