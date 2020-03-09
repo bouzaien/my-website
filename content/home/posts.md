@@ -15,7 +15,7 @@ subtitle = ""
   page_type = "post"
   
   # Choose how much pages you would like to display (0 = all pages)
-  count = 5
+  count = 3
   
   # Choose how many pages you would like to offset by
   offset = 0
@@ -29,7 +29,7 @@ subtitle = ""
     category = ""
     publication_type = ""
     exclude_featured = false
-  
+
 [design]
   # Toggle between the various page layout types.
   #   1 = List
