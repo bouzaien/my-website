@@ -48,4 +48,13 @@ date_format = "Jan 2006"
   date_end = ""
   description = "The CSWA certification is proof of SOLIDWORKS® expertise with cutting-edge skills that businesses seek out and reward."
 
+[[item]]
+  organization = "Fédération Française des Jeux Mathématiques"
+  organization_url = "https://www.ffjm.org/"
+  title = "Finalist of French Competition For Mathematical And Logical Games"
+  url = "https://www.ffjm.org/upload/fichiers/FinaleInternationale/CLASSEMENT-total-28-aout.pdf"
+  certificate_url = ""
+  date_start = "2015-08-28"
+  date_end = ""
+  description = "I was ranked 19/39 during the finals of the French Competition For Mathematical And Logical Games in Aug. 2015 in Paris."
 +++
