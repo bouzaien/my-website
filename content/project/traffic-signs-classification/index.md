@@ -6,6 +6,8 @@ tags:
   - Classification
   - CNN
   - Supervised
+  - TensorFlow
+  - EURECOM
 date: "2020-01-17T00:00:00Z"
 authors:
   - admin

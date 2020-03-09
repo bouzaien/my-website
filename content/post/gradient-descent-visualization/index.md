@@ -5,8 +5,8 @@ summary: In this notebook, I'll try to implement the gradient descent algorithm,
 authors:
 - admin
 tags:
-- visualization
-- optimization
+- Visualization
+- Optimization
 categories: []
 date: "2019-11-07T00:00:00Z"
 featured: false
