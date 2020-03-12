@@ -11,6 +11,8 @@ weight = 10
     weight = 1
 +++
 
+[Transcript]() (Available end June)
+
 ### AML
 Algorithmic Machine Learning
 ### ASI
