@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.bouzaien.com/cycling.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.bouzaien.com/cycling.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/mokhles/ontologies/2020/2/bouzaien-cycling.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Climber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FlatStage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GoodTeam"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualTimeTrial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MountainStage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OneDayRace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prologue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Race"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RaceCyclist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RacePerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rider"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeveralStagesRace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spectactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sprinter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Team"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TeamTimeTrial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeTrial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#composedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participates"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nationality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Astana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Christopher_Froome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eddy_Merckx"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Giro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Miguel_Indurain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sky"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tour_de_France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#US_Postal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vuelta"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#GoodTeam"/>
+        <ObjectMinCardinality cardinality="3">
+            <ObjectProperty IRI="#belongsTo"/>
+            <Class IRI="#Climber"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GoodTeam"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#belongsTo"/>
+            <Class IRI="#Rider"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Race"/>
+        <ObjectUnionOf>
+            <Class IRI="#OneDayRace"/>
+            <Class IRI="#SeveralStagesRace"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RaceCyclist"/>
+        <ObjectUnionOf>
+            <Class IRI="#Climber"/>
+            <Class IRI="#Rider"/>
+            <Class IRI="#Sprinter"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Team"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#belongsTo"/>
+            <Class IRI="#Director"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Team"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#belongsTo"/>
+            <Class IRI="#Doctor"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Team"/>
+        <ObjectExactCardinality cardinality="10">
+            <ObjectProperty IRI="#belongsTo"/>
+            <Class IRI="#RaceCyclist"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TeamPerson"/>
+        <ObjectUnionOf>
+            <Class IRI="#Director"/>
+            <Class IRI="#Doctor"/>
+            <Class IRI="#RaceCyclist"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TimeTrial"/>
+        <ObjectUnionOf>
+            <Class IRI="#IndividualTimeTrial"/>
+            <Class IRI="#TeamTimeTrial"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Climber"/>
+        <Class IRI="#RaceCyclist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <Class IRI="#TeamPerson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Doctor"/>
+        <Class IRI="#TeamPerson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FlatStage"/>
+        <Class IRI="#Stage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GoodTeam"/>
+        <Class IRI="#Team"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualTimeTrial"/>
+        <Class IRI="#TimeTrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MountainStage"/>
+        <Class IRI="#Stage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OneDayRace"/>
+        <Class IRI="#Race"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Prologue"/>
+        <Class IRI="#Stage"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RaceCyclist"/>
+        <Class IRI="#TeamPerson"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RacePerson"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rider"/>
+        <Class IRI="#RaceCyclist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeveralStagesRace"/>
+        <Class IRI="#Race"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spectactor"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sprinter"/>
+        <Class IRI="#RaceCyclist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamPerson"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TeamTimeTrial"/>
+        <Class IRI="#TimeTrial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeTrial"/>
+        <Class IRI="#Stage"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Astana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rider"/>
+        <NamedIndividual IRI="#Christopher_Froome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rider"/>
+        <NamedIndividual IRI="#Eddy_Merckx"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeveralStagesRace"/>
+        <NamedIndividual IRI="#Giro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Rider"/>
+        <NamedIndividual IRI="#Miguel_Indurain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#Sky"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeveralStagesRace"/>
+        <NamedIndividual IRI="#Tour_de_France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Team"/>
+        <NamedIndividual IRI="#US_Postal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeveralStagesRace"/>
+        <NamedIndividual IRI="#Vuelta"/>
+    </ClassAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#belongsTo"/>
+            <Class IRI="#Director"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#belongsTo"/>
+            <Class IRI="#Doctor"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectExactCardinality cardinality="10">
+            <ObjectProperty IRI="#belongsTo"/>
+            <Class IRI="#RaceCyclist"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#composedOf"/>
+        <Class IRI="#SeveralStagesRace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participates"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongsTo"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#composedOf"/>
+        <Class IRI="#Stage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#composedOf"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#composedOf"/>
+            <Class IRI="#Prologue"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participates"/>
+        <Class IRI="#Race"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#age"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nationality"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#age"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nationality"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
