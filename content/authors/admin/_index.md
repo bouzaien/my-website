@@ -47,7 +47,7 @@ social:
   link: https://www.linkedin.com/in/mokhles-bouzaien/
 - icon: github
   icon_pack: fab
-  link: https://github.com/mo5bzn
+  link: https://github.com/bouzaien
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/Mo5_Bzn
