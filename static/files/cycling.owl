@@ -1,17 +1,21 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.bouzaien.com/cycling.owl"
+     xml:base="https://www.bouzaien.com/files/cycling.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.bouzaien.com/cycling.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/mokhles/ontologies/2020/2/bouzaien-cycling.owl#"/>
+     ontologyIRI="https://www.bouzaien.com/files/cycling.owl">
+    <Prefix name="" IRI="https://www.bouzaien.com/files/cycling.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="cycl" IRI="https://www.bouzaien.com/files/cycling.owl"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </Declaration>
     <Declaration>
         <Class IRI="#Climber"/>
     </Declaration>
@@ -85,7 +89,10 @@
         <ObjectProperty IRI="#composedOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#participates"/>
+        <ObjectProperty IRI="#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participatesIn"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#age"/>
@@ -123,71 +130,132 @@
     <Declaration>
         <NamedIndividual IRI="#Vuelta"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    </Declaration>
     <EquivalentClasses>
-        <Class IRI="#GoodTeam"/>
-        <ObjectMinCardinality cardinality="3">
-            <ObjectProperty IRI="#belongsTo"/>
-            <Class IRI="#Climber"/>
-        </ObjectMinCardinality>
+        <Class IRI="http://www.w3.org/2000/10/swap/pim/contact#Person"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="#Person"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#GoodTeam"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#belongsTo"/>
-            <Class IRI="#Rider"/>
-        </ObjectExactCardinality>
+        <ObjectIntersectionOf>
+            <Class IRI="#Team"/>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#includes"/>
+                <Class IRI="#Climber"/>
+            </ObjectMinCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#includes"/>
+                <Class IRI="#Rider"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#participatesIn"/>
+            <Class IRI="#Race"/>
+        </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Race"/>
-        <ObjectUnionOf>
-            <Class IRI="#OneDayRace"/>
-            <Class IRI="#SeveralStagesRace"/>
-        </ObjectUnionOf>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <Class IRI="#OneDayRace"/>
+                <Class IRI="#SeveralStagesRace"/>
+            </ObjectUnionOf>
+            <ObjectComplementOf>
+                <ObjectIntersectionOf>
+                    <Class IRI="#OneDayRace"/>
+                    <Class IRI="#SeveralStagesRace"/>
+                </ObjectIntersectionOf>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#RaceCyclist"/>
-        <ObjectUnionOf>
-            <Class IRI="#Climber"/>
-            <Class IRI="#Rider"/>
-            <Class IRI="#Sprinter"/>
-        </ObjectUnionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Team"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#belongsTo"/>
-            <Class IRI="#Director"/>
-        </ObjectExactCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Team"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#belongsTo"/>
-            <Class IRI="#Doctor"/>
-        </ObjectExactCardinality>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Team"/>
-        <ObjectExactCardinality cardinality="10">
-            <ObjectProperty IRI="#belongsTo"/>
+        <ObjectIntersectionOf>
             <Class IRI="#RaceCyclist"/>
-        </ObjectExactCardinality>
+            <ObjectUnionOf>
+                <Class IRI="#Climber"/>
+                <Class IRI="#Rider"/>
+                <Class IRI="#Sprinter"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SeveralStagesRace"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Race"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#composedOf"/>
+                <Class IRI="#Stage"/>
+            </ObjectSomeValuesFrom>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#composedOf"/>
+                <Class IRI="#Prologue"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Team"/>
+        <ObjectIntersectionOf>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#includes"/>
+                <Class IRI="#Director"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#includes"/>
+                <Class IRI="#Doctor"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="10">
+                <ObjectProperty IRI="#includes"/>
+                <Class IRI="#RaceCyclist"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#TeamPerson"/>
-        <ObjectUnionOf>
-            <Class IRI="#Director"/>
-            <Class IRI="#Doctor"/>
-            <Class IRI="#RaceCyclist"/>
-        </ObjectUnionOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectUnionOf>
+                <Class IRI="#Director"/>
+                <Class IRI="#Doctor"/>
+                <Class IRI="#RaceCyclist"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#TimeTrial"/>
-        <ObjectUnionOf>
-            <Class IRI="#IndividualTimeTrial"/>
-            <Class IRI="#TeamTimeTrial"/>
-        </ObjectUnionOf>
+        <ObjectIntersectionOf>
+            <Class IRI="#Stage"/>
+            <ObjectUnionOf>
+                <Class IRI="#IndividualTimeTrial"/>
+                <Class IRI="#TeamTimeTrial"/>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Agent"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Climber"/>
         <Class IRI="#RaceCyclist"/>
@@ -249,6 +317,10 @@
         <Class IRI="#RaceCyclist"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Team"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TeamPerson"/>
         <Class IRI="#Person"/>
     </SubClassOf>
@@ -260,6 +332,18 @@
         <Class IRI="#TimeTrial"/>
         <Class IRI="#Stage"/>
     </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Document"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OneDayRace"/>
+        <Class IRI="#SeveralStagesRace"/>
+    </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#Team"/>
         <NamedIndividual IRI="#Astana"/>
@@ -296,33 +380,78 @@
         <Class IRI="#SeveralStagesRace"/>
         <NamedIndividual IRI="#Vuelta"/>
     </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Christopher_Froome"/>
+        <NamedIndividual IRI="#Eddy_Merckx"/>
+        <NamedIndividual IRI="#Miguel_Indurain"/>
+    </DifferentIndividuals>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Christopher_Froome"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Christopher_Froome"/>
+        <Literal>Christopher Froome</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nationality"/>
+        <NamedIndividual IRI="#Christopher_Froome"/>
+        <Literal>British</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Eddy_Merckx"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">74</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Eddy_Merckx"/>
+        <Literal>Édouard Louis Joseph</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nationality"/>
+        <NamedIndividual IRI="#Eddy_Merckx"/>
+        <Literal>Belgian</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#Miguel_Indurain"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Miguel_Indurain"/>
+        <Literal>Miguel Induráin Larraya</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nationality"/>
+        <NamedIndividual IRI="#Miguel_Indurain"/>
+        <Literal>Spanish</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#participatesIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectProperty IRI="#includes"/>
+    </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#belongsTo"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#belongsTo"/>
-            <Class IRI="#Director"/>
-        </ObjectExactCardinality>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#belongsTo"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#belongsTo"/>
-            <Class IRI="#Doctor"/>
-        </ObjectExactCardinality>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#belongsTo"/>
-        <ObjectExactCardinality cardinality="10">
-            <ObjectProperty IRI="#belongsTo"/>
-            <Class IRI="#RaceCyclist"/>
-        </ObjectExactCardinality>
+        <Class IRI="#TeamPerson"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#composedOf"/>
-        <Class IRI="#SeveralStagesRace"/>
+        <Class IRI="#Race"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#participates"/>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Team"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participatesIn"/>
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
@@ -334,14 +463,11 @@
         <Class IRI="#Stage"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#composedOf"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#composedOf"/>
-            <Class IRI="#Prologue"/>
-        </ObjectExactCardinality>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#TeamPerson"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#participates"/>
+        <ObjectProperty IRI="#participatesIn"/>
         <Class IRI="#Race"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
@@ -368,6 +494,26 @@
         <DataProperty IRI="#nationality"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://xmlns.com/foaf/0.1/Organization</IRI>
+        <Literal>An organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://xmlns.com/foaf/0.1/Organization</IRI>
+        <IRI>http://xmlns.com/foaf/0.1/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://xmlns.com/foaf/0.1/Organization</IRI>
+        <Literal>Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+        <IRI>http://xmlns.com/foaf/0.1/Organization</IRI>
+        <Literal>stable</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
