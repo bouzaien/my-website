@@ -72,4 +72,4 @@ user_groups:
 - Visitors
 ---
 
-Mokhles Bouzaien is a Data Science student at EURECOM. He is interested in new technologies. In his spare time, Mokhles plays around with data to plot and visualize it. When he is motivated, he can go for online courses or ML projects.
+Mokhles Bouzaien is a Data Science student at EURECOM in Biot, France. He is interested in new technologies. He like playing around with data to plot and visualize it using Python. On special occasions, he uses open source tools such as TensorFlow for ML projects.

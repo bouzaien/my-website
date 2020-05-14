@@ -19,6 +19,16 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
+  organization = "skillshare"
+  organization_url = "https://www.skillshare.com"
+  title = "XML and XML Schema Definition in easy steps"
+  url = "https://www.skillshare.com/classes/XML-and-XML-Schema-Definition-in-easy-steps/1736768283"
+  certificate_url = ""
+  date_start = "2020-05-13"
+  date_end = ""
+  description = """This course is primarily targeted at students needing to understand the syntax and concepts behind XML and XML Schemas. This course is also for anyone who want to learn how to use XML Schemas to define the structure of XML languages and how to validate XML documents against XML schemas."""
+
+[[item]]
   organization = "Coursera"
   organization_url = "https://www.coursera.org"
   title = "Introduction to Data Science in Python"
