@@ -19,7 +19,18 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
-  organization = "skillshare"
+  organization = "Future Learn"
+  organization_url = "https://www.futurelearn.com/"
+  title = "Data Mining with Weka"
+  url = "https://www.futurelearn.com/courses/data-mining-with-weka"
+  certificate_url = ""
+  date_start = "2020-05-27"
+  date_end = ""
+  description = """This course is an introduction to practical data mining using the Weka workbench. It dispels the mystery that surrounds the subject. It explains the principles of popular algorithms and shows how to use them in practical applications."""
+
+
+[[item]]
+  organization = "Skillshare"
   organization_url = "https://www.skillshare.com"
   title = "XML and XML Schema Definition in easy steps"
   url = "https://www.skillshare.com/classes/XML-and-XML-Schema-Definition-in-easy-steps/1736768283"
