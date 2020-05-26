@@ -18,7 +18,7 @@ tags:
 
 categories: []
 
-date: "2020-05-27T00:00:00Z"
+date: "2020-05-26T00:00:00Z"
 
 featured: false
 
@@ -44,8 +44,6 @@ image:
 #   Otherwise, set `projects = []`.
 projects: []
 ---
-
-
 # Table of contents
 1. [Introduction](#Introduction)
 2. [Image Data Preparation](#Image-Data-Preparation)
@@ -73,7 +71,6 @@ In the first part, we will work directly with provided images after applying som
 # Image Data Preparation <a name="Data-Preparation"></a>
 
 The data set we will be using is composed of ~240K gray scale plankton images that were acquired in the bay of Villefranche and manually engineered features that were computed on each imaged object.
-
 
 ## Data Exploration <a name="Data-Exploration"></a>
 
