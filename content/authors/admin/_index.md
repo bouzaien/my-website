@@ -27,10 +27,10 @@ interests:
 
 education:
   courses:
-  - course: Master's in Data Science
+  - course: Data Science and Engineering Track
     institution: EURECOM
-    year: 2019
-  - course: Engineering Curriculum
+    year: 2019 - 2020
+  - course: Master of Science in Engineering
     institution: IMT Atlantique
     year: 2018 - 2021
 
