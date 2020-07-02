@@ -18,7 +18,7 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Software Developer"
+  title = "Software Developing Trainee"
   company = "Imeon Energy"
   company_url = "https://imeon-energy.com/"
   location = "Brest, France"
@@ -40,6 +40,17 @@ date_format = "Jan 2006"
   date_end = "2019-08-23"
   description = """
   Managing the daily activities of 57 students with 14 different nationalities during their one-month French intensive course camp at IMT Atlantique in Brest. That includes organizing cultural activities and trips, sports activities and occasional thematic parties.
+  """
+
+[[experience]]
+  title = "Artificial Intelligence Trainee"
+  company = "EURECOM"
+  company_url = "https://www.eurecom.fr/en"
+  location = "Biot, France"
+  date_start = "2020-07-01"
+  date_end = "2020-08-31"
+  description = """
+  Using the "ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks" code made available by the authors for the task of video summarization, which is a binary classification task requiring to label video segments as salient or not salient.
   """
 
 
