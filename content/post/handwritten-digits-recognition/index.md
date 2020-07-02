@@ -2,10 +2,11 @@
 title: 'Convolutional Neural Network for Handwritten Digits Recognition'
 
 # subtitle: Learn how to blog in Academic using Jupyter notebooks
-summary: "In this post, I will build, train and optimize in TensorFlow one of the simplest Convolutional Neural Networks, LeNet-5, proposed by Yann LeCun, Leon Bottou, Yosuha Bengio and Patrick Haffner in 1998."
+summary: "In this post, we will build, train and optimize in TensorFlow one of the simplest Convolutional Neural Networks, LeNet-5, proposed by Yann LeCun, Leon Bottou, Yosuha Bengio and Patrick Haffner in 1998."
 
 authors:
 - admin
+- rami-henia
 
 tags:
 - visualization
@@ -42,7 +43,7 @@ image:
 projects: []
 ---
 
-In this post, I will build, train and optimize in TensorFlow one of the simplest Convolutional Neural Networks, **LeNet-5**, proposed by Yann LeCun, Leon Bottou, Yosuha Bengio and Patrick Haffner in 1998 (for more details, check the paper *"Gradient-Based Learning Applied to Document Recognition"*, Y.LeCun et al.).
+In this post, we will build, train and optimize in TensorFlow one of the simplest Convolutional Neural Networks, **LeNet-5**, proposed by Yann LeCun, Leon Bottou, Yosuha Bengio and Patrick Haffner in 1998 (for more details, check the paper *"Gradient-Based Learning Applied to Document Recognition"*, Y.LeCun et al.).
 
 
 ```python
