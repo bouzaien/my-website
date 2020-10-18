@@ -4,14 +4,14 @@ title = "Spring 2020"
 toc = true
 type = "docs"
 date = "2020-03-05T00:00:00+01:00"
-weight = 10
+weight = 20
 
 [menu.courses]
     parent = "eurecom"
     weight = 1
 +++
 
-[Transcript]() (Available end June)
+[Transcript](/files/transcript-spring2020.pdf)
 
 ### AML
 Algorithmic Machine Learning
