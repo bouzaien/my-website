@@ -10,15 +10,15 @@ authors:
 superuser: true
 
 # Role/position
-role: Data Science Student
+role: Master of Science in Engineering Student
 
 # Organizations/Affiliations
 organizations:
-- name: EURECOM
-  url: "http://www.eurecom.fr/en"
+- name: IMT Atlantique (formerly Télécom Bretagne)
+  url: "https://www.imt-atlantique.fr/en"
 
 # Short bio (displayed in user profile at end of posts)
-bio: A self-motivated graduate student in Data Science at EURECOM.
+bio: A self-motivated graduate student in Engineering at IMT Atlantique.
 
 interests:
 - Artificial Intelligence/ML
@@ -27,6 +27,9 @@ interests:
 
 education:
   courses:
+  - course: Exchange Student in Computer Science
+    institution: ETH Zürich
+    year: 2020 - 2021
   - course: Data Science and Engineering Track
     institution: EURECOM
     year: 2019 - 2020
@@ -41,7 +44,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: mailto:bouzaien@eurecom.fr  # For a direct email link, use "mailto:test@example.org".
+  link: mailto:mokhles.bouzaien@imt-atlantique.net  # For a direct email link, use "mailto:test@example.org".
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/mokhles-bouzaien/
@@ -50,7 +53,7 @@ social:
   link: https://github.com/bouzaien
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/Mo5_Bzn
+  link: https://twitter.com/m_bouzaien
 - icon: gitlab
   icon_pack: fab
   link: https://gitlab.eurecom.fr/bouzaien
@@ -63,7 +66,7 @@ social:
   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "bouzaien@eurecom.fr"
+email: "mokhles.bouzaien@imt-atlantique.net"
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
@@ -72,4 +75,4 @@ user_groups:
 - Visitors
 ---
 
-Mokhles Bouzaien is a Data Science student at EURECOM in Biot, France. He is interested in new technologies. He likes playing around with data to plot and visualize it using Python. On special occasions, he uses open source tools such as TensorFlow for ML projects.
+Mokhles Bouzaien is a Master of Science in Engineering student at IMT Atlantique, specialized in Data Science. He is interested in new technologies. He likes playing around with data to plot and visualize it using Python. On special occasions, he uses open source tools such as TensorFlow for ML projects.
