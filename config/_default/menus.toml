@@ -47,10 +47,21 @@
 
 [[courses]]
   name = "EURECOM"
-  weight = 20
+  weight = 30
   identifier = "eurecom"
 
 [[courses]]
   name = "IMT Atlantique"
-  weight = 30
+  weight = 40
   identifier = "imt"
+
+[[courses]]
+  name = "ETH Zürich"
+  weight = 20
+  identifier = "ethz"
+
+#[[main_right]]
+#  name = "<i class=\"fab fa-twitter\" style=\"color: #55acee; font-size: 1rem; line-height: 1.25\"></i>"
+#  post = ""
+#  url = "https://twitter.com/wowchemy"
+#  weight = 40
