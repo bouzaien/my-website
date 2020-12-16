@@ -14,8 +14,12 @@ draft: false
 url_pdf: "files/acoustic-treatment-report.pdf"
 
 # Optional external URL for project (replaces project detail page).
-external_link: https://drive.google.com/file/d/1wk2VXsSWVMtonF3zScE1yQfQk8OUOalA/view
+#external_link: https://drive.google.com/file/d/1wk2VXsSWVMtonF3zScE1yQfQk8OUOalA/view
+#external_link: https://www.slideshare.net/MokhlesBouzaien/traitement-acoustique-base-de-rsonateurs-dhelmholtz-intgrs
+external_link: slides/acoustic-treatment
 
 image:
   focal_point: Smart
+
+slides: acoustic-treatment
 ---
