@@ -1,7 +1,7 @@
 ---
-name: Rami Henia
+title: "Rami Henia"
 authors:
-- rami-henia
+- "rami-henia"
 superuser: false
 role: Student
 organizations:

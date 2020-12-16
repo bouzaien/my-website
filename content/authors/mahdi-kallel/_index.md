@@ -1,7 +1,7 @@
 ---
-name: Mahdi Kallel
+title: "Mahdi Kallel"
 authors:
-- mahdi-kallel
+- "mahdi-kallel"
 superuser: false
 role: Student
 organizations:

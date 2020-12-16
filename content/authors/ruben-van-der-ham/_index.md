@@ -1,7 +1,7 @@
 ---
-name: Ruben Van Der Ham
+title: "Ruben Van Der Ham"
 authors:
-- ruben-van-der-ham
+- "ruben-van-der-ham"
 superuser: false
 role: Student
 organizations:

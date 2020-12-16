@@ -1,7 +1,7 @@
 ---
-name: Majdi Khaldi
+title: "Majdi Khaldi"
 authors:
-- majdi-khaldi
+- "majdi-khaldi"
 superuser: false
 role: Student
 organizations:
