@@ -14,16 +14,16 @@ weight = 20
 [Transcript](/files/transcript-spring2020.pdf)
 
 ### AML
-Algorithmic Machine Learning
+Algorithmic Machine Learning ( [Challeges](https://gitlab.eurecom.fr/bouzaien/algorithmic-machine-learning) )
 ### ASI
-Advanced Statistical Inference
+Advanced Statistical Inference ( [Notes](/files/notes/asi-notes.pdf) )
 ### DeepLearning
-Deep Learning
+Deep Learning  ( [Notes](/files/notes/dl-notes.pdf) )
 ### FormalMet
-FormalMethods-Formal specification and verification of systems
+FormalMethods - Formal specification and verification of systems ( [Notes](/files/notes/formalmeth-notes.pdf) )
 ### MALCOM
-Machine Learning for Communication systems
+Machine Learning for Communication systems ( [Exam](/files/notes/malcom-exam.pdf) )
 ### Speech
-Speech and audio processing
+Speech and audio processing  ( [Notes](/files/notes/speech-notes.pdf) | [Exam](/files/notes/speech-exam.pdf) )
 ### WebSem
-An Introduction to Semantic Web technologies
+An Introduction to Semantic Web technologies  ( [Notes](/files/notes/websem-notes.pdf) | [Exam](/files/notes/websem-exam.pdf) )
