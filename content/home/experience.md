@@ -53,5 +53,15 @@ date_format = "Jan 2006"
   Using the "ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks" code made available by the authors for the task of video summarization, which is a binary classification task requiring to label video segments as salient or not salient.
   """
 
+[[experience]]
+  title = "Big Data Engineer Trainee"
+  company = "Dassault Systèmes"
+  company_url = "https://www.3ds.com/"
+  location = "Paris, France"
+  date_start = "2021-03-01"
+  date_end = "2021-08-31"
+  description = """
+  Developing a pipeline for processing, stroring and enriching data of mechanical and electronic components on a very large scale. Identify similar characteristics of different components in order to facilitate navigation, suggestion or comparison of content.
+  """
 
 +++
